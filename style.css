@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: rgb(0, 0, 0);
+    background-image: url(imgs/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.area-tarefa {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#add_tarefa {
+    border-radius: 10px;
+    width: 153px;
+    font-size: 12px;
+    
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(98, 0, 255, 0.644);
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+button:hover {
+    background-color: rgba(134, 4, 255, 0.616);
+}
+
+input {
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(134, 4, 255, 0.616);
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#lista-tarefas {
+    list-style: none;
+    margin-top: 30px;
+}
+
+#lista-tarefas li {
+    background-color: rgb(246, 234, 255);
+    border: solid 1px #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+#lista-tarefas li.completa .tarefa-texto {
+    text-decoration: line-through; /* Risca o texto da tarefa */
+    color: #2C2C2E;
+    
+}
+
+#lista-tarefas li.completa .deletebutton {
+    text-decoration: none; /* O botão de remover não será riscado */
+    color: red; /* Mantém a cor do botão de remoção */
+}
+
+.remover {
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+hr {
+    background-color: rgba(174, 0, 255, 0.5);
+    height: 3px;
+    border-radius: 70px;
+}
+
+#lista-tarefas li:hover {
+    background-color: rgb(187, 129, 235);
+}
+
+.deletebutton {
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+}
+
+.deletebutton:hover {
+    background-color: initial;
+    color: rgb(255, 167, 167);
+    cursor: default;
+}
+
+#nova_tarefa {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Adiciona cantos arredondados */
+}
+
+#task-container {
+    max-height: 20rem; /* Defina a altura máxima desejada */
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical */
+    background-color:transparent; /* Mantenha o fundo da lista */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    
+}

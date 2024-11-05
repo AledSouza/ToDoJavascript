@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> To do list <hr> </h1> 
+
+        Tarefas Restantes: <span id="tarefas-restantes" >0</span>
+        
+        <div class="area-tarefa">
+            <input type="text" id="nova_tarefa" placeholder="Digite uma nova tarefa">
+            <button id="add_tarefa" onclick="addTask()">Adicione uma tarefa</button>
+        </div>
+
+        <div id="task-container">
+        <ul id="lista-tarefas">
+            
+        </ul>
+
+    </div>
+
+        <div class="contador-tarefa"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
