@@ -89,16 +89,15 @@ input {
 }
 
 #lista-tarefas li.completa .tarefa-texto {
-    text-decoration: line-through; /* Risca o texto da tarefa */
+    text-decoration: line-through; 
     color: #2C2C2E;
     
 }
 
 #lista-tarefas li.completa .deletebutton {
-    text-decoration: none; /* O botão de remover não será riscado */
-    color: red; /* Mantém a cor do botão de remoção */
+    text-decoration: none; 
+    color: red; 
 }
-
 .remover {
     background-color: transparent;
     border: none;
@@ -130,13 +129,13 @@ hr {
 
 #nova_tarefa {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 10px; /* Adiciona cantos arredondados */
+    border-radius: 10px;
 }
 
 #task-container {
-    max-height: 20rem; /* Defina a altura máxima desejada */
-    overflow-y: auto; /* Adiciona a barra de rolagem vertical */
-    background-color:transparent; /* Mantenha o fundo da lista */
+    max-height: 20rem;
+    overflow-y: auto;
+    background-color:transparent;
     padding: 10px;
     margin-top: 10px;
     border-radius: 15px;
